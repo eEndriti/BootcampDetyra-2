@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderData.css">
+    <title>Order Data</title>
+</head>
+<body>
+    <a href="Tiramisu.html" id="goBack">Go Back</a>
+    <form method="get" id="form">
+        <label for="cake-type" id="label" >Choose your Tiramisu:</label>
+        <select name="cakes" id="input" >
+            <option value="">--Please choose an option--</option>
+            <option value="classicTiramisu">Classic Tiramisu</option>
+            <option value="chocolate">Chocolate Tiramisu</option>
+            <option value="creamy">Creamy Tiramisu</option>
+            <option value="pumpkin">Pumpkin Tiramisu</option>
+            <option value="orange">Orange Tiramisu</option>
+        </select>  
+        <br/>  
+        <label for="quantity" id="label">Quantity:</label>        
+        <input type="number" name="quantity" max="30" min="1" id="input"
+        style="margin-left:95px; " value="1"/>
+        <br/>
+        <label for="size" id="label">Size:</label>   
+        <input type="range" name="size" min="1" max="4" id="input" style="margin-left:130px;">
+                <hr/>
+        <label for="name" id="label">Name and Surname:</label>
+        <input type="text"  name="name" id="input" placeholder="Type your Name/Surname">
+        <br/>
+        <label for="phone" id="label">Phone Number:</label>
+        <input type="tel" name="phone" id="input" style="margin-left:40px;" placeholder="Type your Phone Number">
+        <br/>
+        <label for="location" id="label">Location:</label>
+        <input type="text" name="location" id="input" style="margin-left: 80px;" placeholder="Type your Street Adress">
+        <br/>
+        <label for="date" id="label">Date to Receive Order:</label>
+        <input type="date" name="date" id="input">
+        <br/>
+        <textarea name="comment" id="input" rows="8" cols="40" placeholder="Any extra Comment..." maxlength="120"></textarea>
+        <br><br>
+        <button name="submit" id="submit" >Submit</button>
+        <button name="reset" id="reset">Reset</button>
+    </form>
+</body>
+</html>

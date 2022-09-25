@@ -6,15 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiramisu</title>
     <link rel="stylesheet" href="t.css">
+    <style>
+        p,h2{
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif	 
+        }
+        h2{
+            font-size: 25px !important;
+        }
+        img{
+            border-radius: 20px;
+        }
+        #questions{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        #title{
+            border-bottom:2px solid black;
+            margin-left: 300px;
+        }
+        #link{
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 5px;
+            color: black;
+            background-color: #b9795e;
+        }
+        #link:hover{
+            background-color: #d4ad9b;
+        }
+    </style>
 </head>
-<body>
+<body bgcolor="#74ddfa">  
     <table width="900" align="center">
         <th align="left">
             <h2>Tiramisu</h2>
+            <hr/>
         </th>
         <tr>
             <td align="right" colspan="3">
-                <a href="#" >Buy on Amazon</a>
+                <a href="orderAmazon.html" id="link">Buy on Amazon</a><p style="display:inline; padding:5px;">&</p><a id="link" href="orderData.html">Order Online</a>
             </td>
         </tr>
         <tr>
@@ -48,9 +83,9 @@
             <td colspan="2">
                 <ul>
                     <b>Ingridients</b>
-                    <li id="test" style="color: red;">1 and 1/4 cups (300ml) very strongly prepared espresso, warm or room temperature</li>
+                    <li>1 and 1/4 cups (300ml) very strongly prepared espresso, warm or room temperature</li>
                     <li>6 Tablespoons (90ml) Grand Marnier*</li>
-                    <li>40-45 ladysadsadasdasdfingers*</li>
+                    <li>40-45 ladyfingers*</li>
                     <li>16 ounces (about 2 cups; 450g) mascarpone, cold or at room temperature</li>
                     <li>1/4 cup (60ml) dark rum</li>
                     <li>4 large pasteurized eggs, separated*</li>
@@ -78,8 +113,8 @@
         </tr>
         <tr>
             <td colspan="3">
-                <dl><strong>Common Tiramisu Questions-Answered</strong>
-                    <br><br>
+                <dl id="questions"><strong id="title">Common Tiramisu Questions-Answered</strong>
+                    <br/><br/>
                     <dt><b>What kind of rum do I use in Tiramisu</b></dt>
                     <dd>Dark rum is the best, but you can use brandy or your favorite coffe liqueur.</dd>
                     <dt><b>Egg whites or whipped cream?</b></dt>
